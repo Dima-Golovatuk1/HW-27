@@ -1,0 +1,54 @@
+.menu {
+    width: 300px;
+    height: 100vh;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.781);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px red solid;
+    transform: translateX(-70%);
+    transition: all 400ms ease-in-out;
+}
+
+
+.menu:hover{
+    transform: translate(0);
+}
+
+
+.menu:hover .slide__menu__title{
+    display: none;
+}
+
+
+.slide__menu__list{
+    color: #fff;
+    margin-left: 50px;
+position: absolute;
+top: 0;
+display: flex;
+flex-direction: column;
+gap: 30px ;
+list-style: circle;
+}
+
+
+.slide__menu__item:hover{
+    color: yellow;
+    cursor: pointer;
+}
+
+
+.slide__menu__title{
+    position: absolute;
+    right: 0;
+    writing-mode: vertical-rl;
+    font-size: 50px;
+}
+
+
+
+
+
+
